@@ -1,2 +1,3 @@
-# training-interpretability
-A set of tools for transformer training interpretability.
+# Induction heads experiment
+
+A set of experiments for reproducing induction heads.
