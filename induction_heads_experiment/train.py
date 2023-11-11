@@ -108,6 +108,9 @@ class Trainer:
         except:
             ppl = -1.0
 
+        model_snapshot_path = f"experiments/induction-heads/model_params_{batch_ix}.pt"
+        torch.save(self.model.state_dict(), model_snapshot_path)
+
         self.logger.progress(
             f"epoch {0:3d}",
             f"{batch_ix:5d}/{self.train_steps:5d} batches",
